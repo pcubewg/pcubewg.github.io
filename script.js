@@ -1,3 +1,4 @@
+alert("hello");
 function validate() {
   const forms = document.querySelectorAll('.needs-validation')
   const status = Array.from(forms).forEach(form => {

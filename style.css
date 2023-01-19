@@ -41,3 +41,16 @@
     border-radius: 20px;
     padding: 50px;
 }
+
+.test-body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+.test-body form{
+    width: 70vw;
+    height: 100vh;
+    background-color: #fff;
+}
