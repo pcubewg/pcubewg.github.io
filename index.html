@@ -46,11 +46,7 @@
         crossorigin="anonymous"></script>
     <script src="./script.js"></script>
     <script>
-        alert("hello");
-
-
-
-        function validate() {
+    function validate() {
             const forms = document.querySelectorAll('.needs-validation')
             const status = Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
@@ -62,11 +58,11 @@
                     form.classList.add('was-validated')
                 }, false)
             });
-            return status
-
+            return status;
         }
         function log(f) {
             var stauts = validate();
+            console.info("validated...")
             if (stauts) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function () {
