@@ -50,7 +50,14 @@
     justify-content: center;
 }
 .test-body form{
-    width: 70vw;
+    width: 100vw;
     height: 100vh;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.test-body form div:nth-child(2){
+    height: auto;
 }

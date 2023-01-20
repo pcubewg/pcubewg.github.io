@@ -1,4 +1,3 @@
-alert("hello");
 function validate() {
   const forms = document.querySelectorAll('.needs-validation')
   const status = Array.from(forms).forEach(form => {
@@ -31,7 +30,7 @@ function log(f) {
           emails = emails.findIndex(document.getElementById(email).value);
         }
         if (d[emails].pass === document.getElementById("password").value) {
-          sessionStorage.setItem('edata', [d[emails].name, d[emails].email]);
+          localStorage.setItem('edata', '{"name":d[emails].name, "email":d[emails].email}');
           window.location.replace("https://pcubewg.github.io/testpage.html")
           window.location.href = "https://pcubewg.github.io/testpage.html"
         }
